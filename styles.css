@@ -1,7 +1,7 @@
 /* Bulma Overwrites */
 
 .navbar-item img {
-    max-height: 4rem;
+    max-height: 6rem;
 }
 
 a.navbar-item,
@@ -15,8 +15,9 @@ a.navbar-item,
 }
 
 a.navbar-item:hover,
-.navbar-link:hover {
-    color: #000;
+.navbar-link:hover,
+.navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
+    color: #0a0a0a;
 }
 
 .navbar-dropdown .navbar-item {
@@ -30,7 +31,7 @@ a.navbar-item:hover,
 
 .is-primary,
 .tag:not(body).is-primary {
-    background-color: #a5a6f7;
+    background-color: #5E61ED;
 }
 
 .has-text-weight-semibold {
@@ -38,15 +39,20 @@ a.navbar-item:hover,
 }
 
 .timeline .timeline-item .timeline-marker {
-    background: #f7cea5;
-    border-color: #f7cea5;
+    background: #ed825e;
+    border-color: #ed825e;
 }
 
 .timeline .timeline-item .timeline-marker.is-icon {
     background: transparent;
     border: none;
-    color: #f7cea5;
+    color: #edc95e;
     font-size: 20px;
+}
+
+.heading {
+    font-weight: 600;
+    font-size: 12px;
 }
 
 
@@ -55,6 +61,10 @@ a.navbar-item:hover,
 body {
     color: #3f3f57;
     font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: #5E61ED;
 }
 
 
@@ -71,14 +81,14 @@ body {
 }
 
 .header {
-    border-bottom: 5px solid #a5a6f7;
+    border-bottom: 5px solid #5E61ED;
 }
 
 
 /* About */
 
 #about {
-    background: linear-gradient( #a5a6f7, #fff 15%);
+    background: linear-gradient( #afb8ec, #fff 10%);
     width: 100%;
     background-size: cover;
 }
@@ -111,4 +121,37 @@ body {
 
 .portrait {
     border: solid 10px #fff;
+}
+
+.table th {
+    vertical-align: middle;
+}
+
+.table p {
+    text-align: right;
+}
+
+.table .table-heading {
+    text-align: left;
+}
+
+.table td,
+.table th {
+    border: none;
+}
+
+.table td:not(:first-child) {
+    padding: 30px 0;
+}
+
+.progress::-webkit-progress-value {
+    background-color: #ed825e;
+}
+
+.progress::-moz-progress-bar {
+    background-color: #ed825e;
+}
+
+.progress::-ms-fill {
+    background-color: #ed825e;
 }

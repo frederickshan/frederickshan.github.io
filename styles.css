@@ -1,3 +1,37 @@
+/* Bulma Overwrites */
+
+.navbar,
+a.navbar-item:hover,
+.navbar-item.has-dropdown:hover .navbar-link {
+    background-color: transparent;
+}
+
+.navbar-dropdown {
+    background-color: #fffbf5;
+    border: none;
+    border-radius: 5px;
+}
+
+.navbar-dropdown a.navbar-item:hover {
+    background-color: #ffe3c5;
+}
+
+
+/* Elements */
+
+body {
+    background: #fffbf5;
+    height: 100vh;
+}
+
+header {
+    padding: 20px 0;
+    background-color: #c6c5ff;
+}
+
+
+/* Classes */
+
 .page,
  :target~.default {
     display: none;
@@ -6,4 +40,10 @@
 .default,
  :target {
     display: block;
+}
+
+.about {
+    background: linear-gradient( #c6c5ff 20%, #fffbf5 70%);
+    width: 100%;
+    background-size: cover;
 }

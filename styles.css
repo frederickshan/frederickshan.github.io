@@ -30,9 +30,20 @@ a.navbar-item:hover,
     background-color: #a5a6f7;
 }
 
+.has-text-weight-semibold {
+    letter-spacing: 1.5px;
+}
+
 .timeline .timeline-item .timeline-marker {
     background: #f7cea5;
     border-color: #f7cea5;
+}
+
+.timeline .timeline-item .timeline-marker.is-icon {
+    background: transparent;
+    border: none;
+    color: #f7cea5;
+    font-size: 20px;
 }
 
 

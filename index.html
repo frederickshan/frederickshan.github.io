@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>hello</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,7 +14,7 @@
     <!-- Navigation -->
     <header class="header">
         <div class="container">
-            <nav class="navbar" role="navigation" aria-label="main navigation">
+            <nav class="navbar is-spaced is-transparent" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
                     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
                         <span aria-hidden="true"></span>
@@ -29,7 +30,7 @@
                         <div class="navbar-item has-dropdown is-hoverable">
                             <a class="navbar-link is-arrowless">my work</a>
 
-                            <div class="navbar-dropdown">
+                            <div class="navbar-dropdown is-boxed">
                                 <a class="navbar-item" href="#code">code</a>
                                 <a class="navbar-item" href="#designs">designs</a>
                                 <a class="navbar-item" href="#art">art</a>
@@ -83,12 +84,12 @@
 
     <!-- About Page -->
     <div id="about" class="page default">
-        <section class="section about">
+        <section class="section">
             <div class="container">
                 <div>
-                    <div class="columns is-centered">
+                    <div class="columns is-mobile is-centered">
                         <figure class="image is-300x300">
-                            <img class="portrait is-rounded" src="assets/self.jpg">
+                            <img class="portrait is-rounded" src="assets/self.jpg" alt="Self Portrait">
                         </figure>
                     </div>
                     <h1 class="title">about</h1>

@@ -1,17 +1,19 @@
 /* Bulma Overwrites */
 
-.navbar,
-a.navbar-item:hover,
-a.navbar-item:focus,
-.navbar-item.has-dropdown:hover .navbar-link {
-    background-color: transparent;
+a.navbar-item,
+.navbar-link,
+.title {
+    color: #3f3f57;
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.5px;
 }
 
-.navbar-item,
-.navbar-link {
-    color: #42424d;
-    font-weight: 600;
-    font-size: 20px;
+a.navbar-item:hover,
+.navbar-link:hover {
+    text-decoration: underline;
+    color: #3f3f57;
 }
 
 .navbar-dropdown .navbar-item {
@@ -19,37 +21,25 @@ a.navbar-item:focus,
     font-size: 16px;
 }
 
-.navbar-dropdown {
-    background-color: #fffcf7;
-    border: none;
-    border-radius: 5px;
-}
-
-.navbar-dropdown a.navbar-item:hover {
-    background-color: #ffcaa2;
-    color: unset;
-}
-
 .title {
-    color: #42424d;
+    font-size: 36px;
 }
 
 
-/* Elements */
+/* Elements  */
 
 body {
-    background: #fffcf7;
     height: 100vh;
-    color: #42424d;
+    color: #3f3f57;
+    font-family: 'Poppins', sans-serif;
 }
 
 header {
-    padding: 20px 0;
-    background-color: #a6b2ff;
+    border-bottom: 5px solid #a5a6f7;
 }
 
 
-/* Classes */
+/* Global */
 
 .page,
  :target~.default {
@@ -61,8 +51,11 @@ header {
     display: block;
 }
 
-.about {
-    background: linear-gradient( #a6b2ff 5%, #fffcf7 30%);
+
+/* About */
+
+#about {
+    background: linear-gradient( #a5a6f7, #fff 30%);
     width: 100%;
     background-size: cover;
 }

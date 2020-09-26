@@ -25,6 +25,16 @@ a.navbar-item:hover,
     font-size: 36px;
 }
 
+.is-primary,
+.tag:not(body).is-primary {
+    background-color: #a5a6f7;
+}
+
+.timeline .timeline-item .timeline-marker {
+    background: #f7cea5;
+    border-color: #f7cea5;
+}
+
 
 /* Elements  */
 
@@ -32,10 +42,6 @@ body {
     height: 100vh;
     color: #3f3f57;
     font-family: 'Poppins', sans-serif;
-}
-
-header {
-    border-bottom: 5px solid #a5a6f7;
 }
 
 
@@ -49,6 +55,10 @@ header {
 .default,
  :target {
     display: block;
+}
+
+.header {
+    border-bottom: 5px solid #a5a6f7;
 }
 
 

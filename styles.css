@@ -1,0 +1,9 @@
+.page,
+ :target~.default {
+    display: none;
+}
+
+.default,
+ :target {
+    display: block;
+}

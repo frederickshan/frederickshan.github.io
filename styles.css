@@ -30,8 +30,15 @@ a.navbar-item:hover,
 }
 
 .is-primary,
-.tag:not(body).is-primary {
+.tag:not(body).is-primary,
+.button.is-primary {
     background-color: #5E61ED;
+}
+
+.button.is-primary:hover,
+.button.is-primary:active,
+.button.is-primary:focus {
+    background-color: #afb8ec;
 }
 
 .has-text-weight-semibold {
@@ -65,6 +72,10 @@ body {
 
 a {
     color: #5E61ED;
+}
+
+a:hover {
+    color: #afb8ec;
 }
 
 

@@ -16,7 +16,9 @@ a.navbar-item,
 
 a.navbar-item:hover,
 .navbar-link:hover,
-.navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
+.navbar.is-transparent .navbar-dropdown a.navbar-item:hover,
+a.navbar-item:focus,
+a.navbar-item:focus-within {
     color: #0a0a0a;
 }
 
@@ -63,10 +65,43 @@ a.navbar-item:hover,
     font-size: 12px;
 }
 
+.input:active,
+.input:focus,
+.is-active.input,
+.is-active.textarea,
+.is-focused.input,
+.is-focused.textarea,
+.select select.is-active,
+.select select.is-focused,
+.select select:active,
+.select select:focus,
+.textarea:active,
+.textarea:focus {
+    border-color: #5E61ED;
+    box-shadow: 0 0 0 .125 rgba(94, 97, 237, alpha)
+}
+
+.control.has-icons-left .input:focus~.icon,
+.control.has-icons-left .select:focus~.icon {
+    color: #3f3f57;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+    border-color: #5E61ED;
+}
+
+.select:not(.is-multiple):not(.is-loading):hover::after {
+    border-color: #afb8ec;
+}
+
 
 /* Elements  */
 
-body {
+body,
+button,
+input,
+select,
+textarea {
     color: #3f3f57;
     font-family: 'Poppins', sans-serif;
 }
@@ -96,22 +131,38 @@ a:hover {
     border-bottom: 5px solid #5E61ED;
 }
 
+#goToTop {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 99;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    color: #edc95e;
+}
+
+#goToTop:hover {
+    color: #f1db90;
+}
+
+.slide {
+    position: relative;
+    left: -1000px;
+    -webkit-animation: slide .5s forwards;
+    -webkit-animation-delay: .5s;
+    animation: slide .5s forwards;
+    animation-delay: .5s;
+}
+
 
 /* About */
 
 #about {
-    background: linear-gradient( #afb8ec, #fff 10%);
+    background: linear-gradient( #afb8ec, #fff 5%);
     width: 100%;
     background-size: cover;
-}
-
-#slide {
-    position: relative;
-    left: -1000px;
-    -webkit-animation: slide 0.5s forwards;
-    -webkit-animation-delay: 2s;
-    animation: slide 0.5s forwards;
-    animation-delay: 1s;
 }
 
 @-webkit-keyframes slide {
@@ -139,7 +190,7 @@ a:hover {
 }
 
 .portrait {
-    border: solid 10px #fff;
+    border: solid 5px #fff;
 }
 
 .table th {
@@ -177,4 +228,11 @@ a:hover {
 
 .progress::-ms-fill {
     background-color: #ed825e;
+}
+
+
+/* Contact */
+
+.contact-icon {
+    color: #edc95e;
 }

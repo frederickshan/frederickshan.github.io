@@ -87,7 +87,63 @@
     <div id="contact" class="page">
         <section class="section">
             <div class="container">
-                <h1 class="title">contact</h1>
+                <div class="columns">
+                    <div class="column is-three-fifths is-offset-one-fifth">
+                        <div class="slide">
+                            <h5 class="title">drop a line</h5>
+                        </div>
+
+                        <form class="mt-4" accept-charset="UTF-8" action="https://usebasin.com/f/8024217a109e" enctype="multipart/form-data" method="POST">
+                            <div class="field">
+                                <label class="label heading" for="name">Name</label>
+                                <div class="control has-icons-left">
+                                    <input id="name" class="input" name="name" type="text" placeholder="your name" required>
+                                    <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label heading" for="email">Email</label>
+                                <div class="control has-icons-left">
+                                    <input id="email" class="input" name="email" type="email" placeholder="your email" required>
+                                    <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label heading" for="subject">Subject</label>
+                                <div class="control is-expanded has-icons-left">
+                                    <div class="select is-fullwidth">
+                                        <select id="subject" name="subject">
+											<option value="general">general</option>
+											<option value="mentoring">request mentoring</option>
+											<option value="commissions">commission inquiry</option>
+											<option value="freelance">freelance project</option>
+										</select>
+                                    </div>
+                                    <span class="icon is-small is-left"><i class="fas fa-pen"></i></span>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <label class="label heading" for="message">Message</label>
+                                <div class="control">
+                                    <textarea id="message" class="textarea" name="message" required></textarea>
+                                </div>
+                            </div>
+
+                            <div class="field">
+                                <div class="control">
+                                    <button class="button is-primary" type="submit">submit</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="is-hidden-desktop has-text-centered mt-6">
+                            <i class=" fab fa-telegram-plane fa-3x"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </div>
@@ -105,7 +161,7 @@
                                 </figure>
                             </div>
 
-                            <div id="slide">
+                            <div class="slide">
                                 <h1 class="title">hello</h1>
                             </div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -120,14 +176,14 @@
                                     <i class="skill-icon fas fa-laptop-code fa-5x"></i>
                                     <p class="heading">Web Development</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <p><a class="button is-primary mt-4" href="#code">view code</a></p>
+                                    <p><a class="button is-primary mt-4 mb-6" href="#code">view code</a></p>
                                 </div>
 
                                 <div class="column">
                                     <i class="skill-icon fas fa-draw-polygon fa-5x"></i>
                                     <p class="heading">Graphic Design</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <p><a class="button is-primary mt-4" href="#designs">view designs</a></p>
+                                    <p><a class="button is-primary mt-4 mb-6" href="#designs">view designs</a></p>
                                 </div>
                             </div>
 
@@ -136,14 +192,14 @@
                                     <i class="skill-icon fas fa-edit fa-5x"></i>
                                     <p class="heading">Digital Art</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <p><a class="button is-primary mt-4" href="#art">view art</a></p>
+                                    <p><a class="button is-primary mt-4 mb-6" href="#art">view art</a></p>
                                 </div>
 
                                 <div class="column">
                                     <i class="skill-icon fas fa-chalkboard-teacher fa-5x"></i>
                                     <p class="heading">Mentoring</p>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                    <p><a class="button is-primary mt-4" href="#contact">contact me</a></p>
+                                    <p><a class="button is-primary mt-4 mb-6" href="#contact">contact me</a></p>
                                 </div>
                             </div>
                         </div>
@@ -315,9 +371,32 @@
             </div>
         </section>
     </div>
+    <button id="goToTop" title="Go to top" onclick="topFunction()"><i class="fas fa-arrow-up fa-3x"></i></button>
 </body>
 
 <script>
+    //Get the button:
+    mybutton = document.getElementById("goToTop");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+        scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+
     document.addEventListener('DOMContentLoaded', () => {
 
         // Get all "navbar-burger" elements

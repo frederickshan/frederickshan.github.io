@@ -236,9 +236,11 @@ body {
     background-color: #ed825e;
 }
 
+.linkedin-icon {
+    padding: 3px;
+    margin-right: 10px;
+}
 
-/* Contact */
-
-.contact-icon {
-    color: #edc95e;
+img.tile-image {
+    width: 20rem;
 }

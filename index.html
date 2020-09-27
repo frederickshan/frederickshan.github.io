@@ -88,6 +88,19 @@
                 <div class="columns is-main-content">
                     <div class="column is-three-fifths is-offset-one-fifth">
                         <h4 class="title">digital art</h4>
+
+                        <div class="tile is-ancestor is-vertical">
+                            <div class="tile is-parent">
+                                <article class="tile is-child">
+                                    <div class="has-text-centered">
+                                        <figure class="image is-inline-block">
+                                            <img src="assets/images/placeholder.svg" alt="placeholder image">
+                                        </figure>
+                                        <p class="heading">Coming Soon</p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,7 +115,11 @@
                     <div class="column is-three-fifths is-offset-one-fifth">
                         <h5 class="title">drop a line</h5>
                         <p class="has-text-weight-semibold">interested in learning more?</p>
-                        <p class="has-text-centered"><a class="button is-primary mt-4" href="https://www.linkedin.com/in/shannonefrederick/">connect on linkedin</a></p>
+                        <p class="has-text-centered">
+                            <a class="button is-primary mt-4" href="https://www.linkedin.com/in/shannonefrederick/">
+                                <span><i class="linkedin-icon fab fa-linkedin fa-2x"></i></span> connect on linkedin
+                            </a>
+                        </p>
 
                         <div class="is-divider" data-content="OR"></div>
 
@@ -422,7 +439,7 @@
                     const target = el.dataset.target;
                     const $target = document.getElementById(target);
 
-                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu "
                     el.classList.toggle('is-active');
                     $target.classList.toggle('is-active');
 

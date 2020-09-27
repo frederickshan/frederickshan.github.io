@@ -1,16 +1,12 @@
 /* Bulma Overwrites */
 
-.navbar-item img {
-    max-height: 6rem;
-}
-
 a.navbar-item,
 .navbar-link,
 .title {
     color: #3f3f57;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 18px;
-    font-family: 'Poppins', sans-serif;
     letter-spacing: 1.5px;
 }
 
@@ -54,10 +50,10 @@ a.navbar-item:focus-within {
 }
 
 .timeline .timeline-item .timeline-marker.is-icon {
-    background: transparent;
-    border: none;
     color: #edc95e;
     font-size: 20px;
+    background: transparent;
+    border: none;
 }
 
 .heading {
@@ -96,7 +92,12 @@ a.navbar-item:focus-within {
 }
 
 
-/* Elements  */
+/* End Bulma Overwrites  */
+
+body {
+    background: linear-gradient( #5E61ED, #ed825e, #edc95e);
+    min-height: 100vh;
+}
 
 body,
 button,
@@ -115,25 +116,6 @@ a:hover {
     color: #afb8ec;
 }
 
-
-/* Global */
-
-body {
-    background: linear-gradient( #5E61ED, #ed825e, #edc95e);
-    width: 100%;
-    min-height: 100vh;
-}
-
-.page,
- :target~.default {
-    display: none;
-}
-
-.default,
- :target {
-    display: block;
-}
-
 #goToTop {
     display: none;
     position: fixed;
@@ -143,17 +125,26 @@ body {
     cursor: pointer;
     background-color: transparent;
     border: none;
-    color: #3f3f57;
 }
 
 #goToTop:hover {
     color: #0a0a0a;
 }
 
+.page,
+:target~.default {
+    display: none;
+}
+
+.default,
+:target {
+    display: block;
+}
+
 .is-main-content {
+    padding: 2rem;
     background-color: #fff;
     border-radius: 50px;
-    padding: 2rem;
 }
 
 .slide {
@@ -165,9 +156,6 @@ body {
     animation-delay: .5s;
 }
 
-
-/* About */
-
 @-webkit-keyframes slide {
     100% {
         left: 0;
@@ -178,6 +166,18 @@ body {
     100% {
         left: 0;
     }
+}
+
+.progress::-webkit-progress-value {
+    background-color: #ed825e;
+}
+
+.progress::-moz-progress-bar {
+    background-color: #ed825e;
+}
+
+.progress::-ms-fill {
+    background-color: #ed825e;
 }
 
 .intro,
@@ -196,23 +196,7 @@ body {
     width: 250px;
 }
 
-.progress::-webkit-progress-value {
-    background-color: #ed825e;
-}
-
-.progress::-moz-progress-bar {
-    background-color: #ed825e;
-}
-
-.progress::-ms-fill {
-    background-color: #ed825e;
-}
-
 .linkedin-icon {
     padding: 3px;
     margin-right: 10px;
-}
-
-img.tile-image {
-    width: 20rem;
 }

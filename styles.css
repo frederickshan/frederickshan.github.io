@@ -76,9 +76,10 @@ a.navbar-item:focus-within {
 .select select:active,
 .select select:focus,
 .textarea:active,
-.textarea:focus {
+.textarea:focus,
+.button.is-primary:focus:not(:active) {
     border-color: #5E61ED;
-    box-shadow: 0 0 0 .125 rgba(94, 97, 237, alpha)
+    box-shadow: 0 0 0 .125em rgba(94, 97, 237, .25)
 }
 
 .control.has-icons-left .input:focus~.icon,
@@ -117,6 +118,12 @@ a:hover {
 
 /* Global */
 
+body {
+    background: linear-gradient( #5E61ED, #ed825e, #edc95e);
+    width: 100%;
+    min-height: 100vh;
+}
+
 .page,
  :target~.default {
     display: none;
@@ -125,10 +132,6 @@ a:hover {
 .default,
  :target {
     display: block;
-}
-
-.header {
-    border-bottom: 5px solid #5E61ED;
 }
 
 #goToTop {
@@ -140,11 +143,17 @@ a:hover {
     cursor: pointer;
     background-color: transparent;
     border: none;
-    color: #edc95e;
+    color: #3f3f57;
 }
 
 #goToTop:hover {
-    color: #f1db90;
+    color: #0a0a0a;
+}
+
+.is-main-content {
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 2rem;
 }
 
 .slide {
@@ -158,12 +167,6 @@ a:hover {
 
 
 /* About */
-
-#about {
-    background: linear-gradient( #afb8ec, #fff 5%);
-    width: 100%;
-    background-size: cover;
-}
 
 @-webkit-keyframes slide {
     100% {
@@ -184,13 +187,9 @@ a:hover {
     border-bottom: 1px solid #dbdbdb;
 }
 
-.is-300x300 {
-    height: 300px;
-    width: 300px;
-}
-
-.portrait {
-    border: solid 5px #fff;
+.is-250x250 {
+    height: 250px;
+    width: 250px;
 }
 
 .table th {

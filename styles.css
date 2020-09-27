@@ -180,13 +180,13 @@ a:hover {
     background-color: #ed825e;
 }
 
-.intro,
+.about,
 .skills,
 .technologies {
     border-bottom: 1px solid #dbdbdb;
 }
 
-.intro,
+.about,
 .technologies {
     padding-bottom: 3rem;
 }

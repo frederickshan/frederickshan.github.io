@@ -33,6 +33,7 @@ a.navbar-item:hover,
 .tag:not(body).is-primary,
 .button.is-primary {
     background-color: #5E61ED;
+    letter-spacing: 1.5px;
 }
 
 .button.is-primary:hover,
@@ -125,6 +126,13 @@ a:hover {
     }
 }
 
+.intro,
+.skills,
+.technologies {
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #dbdbdb;
+}
+
 .is-300x300 {
     height: 300px;
     width: 300px;
@@ -155,6 +163,10 @@ a:hover {
     padding: 30px 0;
 }
 
+.table .measurement {
+    text-align: left;
+}
+
 .progress::-webkit-progress-value {
     background-color: #ed825e;
 }
@@ -165,8 +177,4 @@ a:hover {
 
 .progress::-ms-fill {
     background-color: #ed825e;
-}
-
-.skill-icon {
-    color: ;
 }

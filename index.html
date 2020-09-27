@@ -20,9 +20,11 @@
         <div class="container">
             <nav class="navbar is-spaced is-transparent" role="navigation" aria-label="main navigation">
                 <div class="navbar-brand">
-                    <figure class="navbar-item image">
-                        <img src="assets/images/initials.png" alt="Shannon Frederick Initials">
-                    </figure>
+                    <a href="#about">
+                        <figure class="navbar-item image">
+                            <img src="assets/images/initials.png" alt="Shannon Frederick Initials">
+                        </figure>
+                    </a>
 
                     <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
                         <span aria-hidden="true"></span>
@@ -94,15 +96,15 @@
     <div id="about" class="page default">
         <section class="section">
             <div class="container">
-                <div class="columns is-mobile is-centered">
-                    <figure class="image is-300x300">
-                        <img class="portrait is-rounded" src="assets/images/self.jpg" alt="Self Portrait">
-                    </figure>
-                </div>
-
                 <div class="columns">
-                    <div class="column is-half is-offset-one-quarter">
+                    <div class="column is-three-fifths is-offset-one-fifth">
                         <div class="intro">
+                            <div class="has-text-centered">
+                                <figure class="image is-300x300 is-inline-block">
+                                    <img class="portrait is-rounded" src="assets/images/self.jpg" alt="Self Portrait">
+                                </figure>
+                            </div>
+
                             <div id="slide">
                                 <h1 class="title">hello</h1>
                             </div>
@@ -111,197 +113,203 @@
                             </p>
                         </div>
 
-                        <p class="table-heading has-text-weight-semibold mt-6">i do all kinds of neat stuff</p>
-                        <div class="columns has-text-centered mt-4">
-                            <div class="column is-half">
-                                <i class="skill-icon fas fa-laptop-code fa-5x"></i>
-                                <p class="heading">Web Development</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <a class="button is-primary mt-2" href="#code">View Code</a>
+                        <div class="skills">
+                            <p class="has-text-weight-semibold mt-6">i do all kinds of neat stuff</p>
+                            <div class="columns has-text-centered mt-4">
+                                <div class="column is-half">
+                                    <i class="skill-icon fas fa-laptop-code fa-5x"></i>
+                                    <p class="heading">Web Development</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p><a class="button is-primary mt-4" href="#code">view code</a></p>
+                                </div>
+
+                                <div class="column">
+                                    <i class="skill-icon fas fa-draw-polygon fa-5x"></i>
+                                    <p class="heading">Graphic Design</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p><a class="button is-primary mt-4" href="#designs">view designs</a></p>
+                                </div>
                             </div>
 
-                            <div class="column is-half">
-                                <i class="skill-icon fas fa-draw-polygon fa-5x"></i>
-                                <p class="heading">Graphic Design</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <a class="button is-primary mt-2" href="#designs">View Designs</a>
-                            </div>
-                        </div>
+                            <div class="columns has-text-centered">
+                                <div class="column is-half">
+                                    <i class="skill-icon fas fa-edit fa-5x"></i>
+                                    <p class="heading">Digital Art</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p><a class="button is-primary mt-4" href="#art">view art</a></p>
+                                </div>
 
-                        <div class="columns has-text-centered">
-                            <div class="column is-half">
-                                <i class="skill-icon fas fa-edit fa-5x"></i>
-                                <p class="heading">Digital Art</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <a class="button is-primary mt-2" href="#art">View Art</a>
-                            </div>
-
-                            <div class="column is-half">
-                                <i class="skill-icon fas fa-chalkboard-teacher fa-5x"></i>
-                                <p class="heading">Mentor</p>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <a class="button is-primary mt-2" href="#contact">Contact Me</a>
-                            </div>
-                        </div>
-
-
-
-                        <table class="table is-fullwidth">
-                            <caption class="table-heading has-text-weight-semibold mt-6">confidence in top technologies</caption>
-                            <tr>
-                                <th>
-                                    <p class="heading">HTML</p>
-                                </th>
-                                <td>
-                                    <progress class="progress" value="90" max="100">90%</progress>
-                                </td>
-
-                                <th>
-                                    <p class="heading">CSS</p>
-                                </th>
-                                <td>
-                                    <progress class="progress" value="90" max="100">90%</progress>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th>
-                                    <p class="heading">Javascript</p>
-                                </th>
-                                <td>
-                                    <progress class="progress" value="90" max="100">80%</progress>
-                                </td>
-
-                                <th>
-                                    <p class="heading">Vue</p>
-                                </th>
-                                <td>
-                                    <progress class="progress" value="80" max="100">80%</progress>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th>
-                                    <p class="heading">Bash</p>
-                                </th>
-                                <td>
-                                    <progress class="progress" value="80" max="100">80%</progress>
-                                </td>
-
-                                <th>
-                                    <p class="heading">Node</p>
-                                </th>
-                                <td>
-                                    <progress class="progress" value="70" max="100">70%</progress>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th>
-                                    <p class="heading">Nginx</p>
-                                </th>
-                                <td>
-                                    <progress class="progress" value="70" max="100">70%</progress>
-                                </td>
-
-                                <th>
-                                    <p class="heading">Docker</p>
-                                </th>
-                                <td>
-                                    <progress class="progress" value="60" max="100">60%</progress>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-
-                <div class="columns">
-                    <div class="column is-half is-offset-one-quarter timeline is-centered">
-                        <header class="timeline-header">
-                            <span class="tag is-medium is-primary">Present</span>
-                        </header>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <p class="heading">February 2020</p>
-                                <p class="has-text-weight-semibold">Vitamix</p>
-                                <p>Web Developer III</p>
+                                <div class="column">
+                                    <i class="skill-icon fas fa-chalkboard-teacher fa-5x"></i>
+                                    <p class="heading">Mentoring</p>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                    <p><a class="button is-primary mt-4" href="#contact">contact me</a></p>
+                                </div>
                             </div>
                         </div>
-                        <header class="timeline-header">
-                            <span class="tag is-primary">2019</span>
-                        </header>
-                        <div class="timeline-item">
-                            <div class="timeline-marker is-icon">
-                                <i class="fas fa-trophy"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="heading">September 2019</p>
-                                <p class="has-text-weight-semibold">Dealer Tire</p>
-                                <p>IT Employee of the Quarter</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <p class="heading">April 2019</p>
-                                <p class="has-text-weight-semibold">Dealer Tire</p>
-                                <p>Web Software Engineer</p>
-                            </div>
-                        </div>
-                        <header class="timeline-header">
-                            <span class="tag is-primary">2018</span>
-                        </header>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <p class="heading">October 2018</p>
-                                <p class="has-text-weight-semibold">Dealer Tire</p>
-                                <p>Associate Web Developer</p>
-                            </div>
-                        </div>
-                        <header class="timeline-header">
-                            <span class="tag is-primary">2017</span>
-                        </header>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <p class="heading">August 2017</p>
-                                <p class="has-text-weight-semibold">Dealer Tire</p>
-                                <p>Contract Web Developer</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker is-icon">
-                                <i class="fas fa-graduation-cap"></i>
-                            </div>
-                            <div class="timeline-content">
-                                <p class="heading">August 2017</p>
-                                <p class="has-text-weight-semibold">Tech Elevator</p>
-                                <p>Graduated with Certification</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <p class="heading">July 2017</p>
-                                <p class="has-text-weight-semibold">Cleveland GiveCamp</p>
-                                <p>Volunteer</p>
-                            </div>
-                        </div>
-                        <div class="timeline-item">
-                            <div class="timeline-marker"></div>
-                            <div class="timeline-content">
-                                <p class="heading">May 2017</p>
-                                <p class="has-text-weight-semibold">Tech Elevator</p>
-                                <p>Began 14-Week Coding Bootcamp</p>
-                            </div>
-                        </div>
-                        <header class="timeline-header">
-                            <span class="tag is-medium is-primary">Start</span>
-                        </header>
 
-                        <p class="has-text-centered mt-6">Want to see more? <a>View my resume</a> or <a href="https://www.linkedin.com/in/shannonefrederick/">connect on LinkedIn</a>.</p>
+                        <div class="technologies">
+                            <table class="table is-fullwidth">
+                                <caption class="table-heading has-text-weight-semibold mt-6">
+                                    technologies i love
+                                    <p class="measurement has-text-weight-normal"><small>(level of confidence)</small></p>
+                                </caption>
+
+                                <tr>
+                                    <th>
+                                        <p class="heading">HTML</p>
+                                    </th>
+                                    <td>
+                                        <progress class="progress" value="90" max="100">90%</progress>
+                                    </td>
+
+                                    <th>
+                                        <p class="heading">CSS</p>
+                                    </th>
+                                    <td>
+                                        <progress class="progress" value="90" max="100">90%</progress>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>
+                                        <p class="heading">Javascript</p>
+                                    </th>
+                                    <td>
+                                        <progress class="progress" value="90" max="100">80%</progress>
+                                    </td>
+
+                                    <th>
+                                        <p class="heading">Vue</p>
+                                    </th>
+                                    <td>
+                                        <progress class="progress" value="80" max="100">80%</progress>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>
+                                        <p class="heading">Bash</p>
+                                    </th>
+                                    <td>
+                                        <progress class="progress" value="80" max="100">80%</progress>
+                                    </td>
+
+                                    <th>
+                                        <p class="heading">Node</p>
+                                    </th>
+                                    <td>
+                                        <progress class="progress" value="70" max="100">70%</progress>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <th>
+                                        <p class="heading">Nginx</p>
+                                    </th>
+                                    <td>
+                                        <progress class="progress" value="70" max="100">70%</progress>
+                                    </td>
+
+                                    <th>
+                                        <p class="heading">Docker</p>
+                                    </th>
+                                    <td>
+                                        <progress class="progress" value="60" max="100">60%</progress>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="timeline is-centered">
+                            <p class="has-text-weight-semibold mt-6 mb-6">how i got here</p>
+
+                            <header class="timeline-header">
+                                <span class="tag is-medium is-primary">present</span>
+                            </header>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <p class="heading">February 2020</p>
+                                    <p class="has-text-weight-semibold">Vitamix</p>
+                                    <p>Web Developer III</p>
+                                </div>
+                            </div>
+                            <header class="timeline-header">
+                                <span class="tag is-primary">2019</span>
+                            </header>
+                            <div class="timeline-item">
+                                <div class="timeline-marker is-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <p class="heading">September 2019</p>
+                                    <p class="has-text-weight-semibold">Dealer Tire</p>
+                                    <p>IT Employee of the Quarter</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <p class="heading">April 2019</p>
+                                    <p class="has-text-weight-semibold">Dealer Tire</p>
+                                    <p>Web Software Engineer</p>
+                                </div>
+                            </div>
+                            <header class="timeline-header">
+                                <span class="tag is-primary">2018</span>
+                            </header>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <p class="heading">October 2018</p>
+                                    <p class="has-text-weight-semibold">Dealer Tire</p>
+                                    <p>Associate Web Developer</p>
+                                </div>
+                            </div>
+                            <header class="timeline-header">
+                                <span class="tag is-primary">2017</span>
+                            </header>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <p class="heading">August 2017</p>
+                                    <p class="has-text-weight-semibold">Dealer Tire</p>
+                                    <p>Contract Web Developer</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker is-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <p class="heading">August 2017</p>
+                                    <p class="has-text-weight-semibold">Tech Elevator</p>
+                                    <p>Graduated with Certification</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <p class="heading">July 2017</p>
+                                    <p class="has-text-weight-semibold">Cleveland GiveCamp</p>
+                                    <p>Volunteer</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <p class="heading">May 2017</p>
+                                    <p class="has-text-weight-semibold">Tech Elevator</p>
+                                    <p>Began 14-Week Coding Bootcamp</p>
+                                </div>
+                            </div>
+                            <header class="timeline-header">
+                                <span class="tag is-medium is-primary">start</span>
+                            </header>
+
+                            <p class="has-text-centered mt-6">Want to see more? <a>View my resume</a> or <a href="https://www.linkedin.com/in/shannonefrederick/">connect on LinkedIn</a>.</p>
+                        </div>
                     </div>
                 </div>
             </div>

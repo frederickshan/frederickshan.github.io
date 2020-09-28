@@ -459,14 +459,14 @@
         }
 
         // To hide nav menu after selecting new page anchor
-        // const navbarItems = document.querySelectorAll("a.navbar-item");
-        // const navbarMenu = document.getElementById('navbarMenu');
-        // navbarItems.forEach(navItem => {
-        //     navItem.addEventListener('click', () => {
-        //         $navbarBurgers[0].classList.remove('is-active');
-        //         navbarMenu.classList.remove('is-active');
-        //     });
-        // });
+        const navbarItems = document.querySelectorAll("a.navbar-item");
+        const navbarMenu = document.getElementById('navbarMenu');
+        navbarItems.forEach(navItem => {
+            navItem.addEventListener('click', () => {
+                $navbarBurgers[0].classList.remove('is-active');
+                navbarMenu.classList.remove('is-active');
+            });
+        });
 
     });
 </script>

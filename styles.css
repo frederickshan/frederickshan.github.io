@@ -1,5 +1,9 @@
 /* Bulma Overwrites */
 
+.navbar-item img {
+    max-height: 5rem;
+}
+
 a.navbar-item,
 .navbar-link,
 .title {
@@ -144,7 +148,7 @@ a:hover {
 .is-main-content {
     padding: 2rem;
     background-color: #fff;
-    border-radius: 50px;
+    border-radius: 30px;
 }
 
 .slide {

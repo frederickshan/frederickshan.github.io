@@ -17,21 +17,20 @@
 <body>
     <!-- Navigation -->
     <header class="header">
-        <nav class="navbar is-spaced is-transparent" role="navigation" aria-label="main navigation">
-
+        <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a href="#about">
-                    <img class="navbar-item" src="assets/images/initials.png" alt="Shannon Frederick Initials" width="100">
+                <a class="navbar-item" href="#about">
+                    <img src="assets/images/initials.png" alt="Shannon Frederick Initials">
                 </a>
 
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar">
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
 
-            <div id="navbar" class="navbar-menu">
+            <div id="navbarMenu" class="navbar-menu">
                 <div class="navbar-start">
                     <a class="navbar-item" href="#about">about me</a>
 
@@ -422,7 +421,7 @@
     };
 
     function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             mybutton.style.display = "block";
         } else {
             mybutton.style.display = "none";

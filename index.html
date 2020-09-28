@@ -464,7 +464,11 @@
             navItem.addEventListener('click', () => {
                 $navbarBurgers[0].classList.remove('is-active');
                 navbarMenu.classList.remove('is-active');
-                topFunction();
+                //  Sometimes this executes out of order,
+                // setTimeout helps prevent race with HTML Anchor / CSS
+                setTimeout(() => {
+                    topFunction()
+                }, 10);
             });
         });
 

@@ -143,6 +143,7 @@ a:hover {
 .default,
 :target {
     display: block;
+    scroll-margin-top: 100px;
 }
 
 .is-main-content {

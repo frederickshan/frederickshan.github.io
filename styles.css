@@ -144,8 +144,6 @@ a:hover {
 :target {
     display: block;
     scroll-margin-top: 100px;
-    /* for Safari / iOS */
-    scroll-snap-margin-top: 100px;
 }
 
 .is-main-content {

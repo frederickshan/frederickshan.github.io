@@ -465,6 +465,7 @@
             navItem.addEventListener('click', () => {
                 $navbarBurgers[0].classList.remove('is-active');
                 navbarMenu.classList.remove('is-active');
+                document.scrollIntoView(true); //will this work??
             });
         });
 

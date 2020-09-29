@@ -1,24 +1,60 @@
 <template>
-	<div class="about">
-		<div class="has-text-centered">
-			<figure class="image is-250x250 is-inline-block">
-				<img class="portrait is-rounded" src="../assets/images/self.jpg" alt="Self Portrait" />
-			</figure>
-		</div>
-
-		<div class="slide">
-			<h1 class="title">hello</h1>
-		</div>
-
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-			veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-			commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-			velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-			cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-			est laborum.
+	<div class="contact">
+		<h5 class="title">drop a line</h5>
+		<p class="has-text-weight-semibold">interested in learning more?</p>
+		<p class="has-text-centered">
+			<a class="button is-primary mt-4" href="https://www.linkedin.com/in/shannonefrederick/">
+				<span><i class="linkedin-icon fab fa-linkedin fa-2x"></i></span> connect on linkedin
+			</a>
 		</p>
+
+		<div class="is-divider" data-content="OR"></div>
+
+		<form class="mt-4" accept-charset="UTF-8" action="https://usebasin.com/f/8024217a109e" enctype="multipart/form-data" method="POST">
+			<div class="field">
+				<label class="label heading" for="name">Name</label>
+				<div class="control has-icons-left">
+					<input id="name" class="input" name="name" type="text" placeholder="your name" required>
+					<span class="icon is-small is-left"><i class="fas fa-user"></i></span>
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label heading" for="email">Email</label>
+				<div class="control has-icons-left">
+					<input id="email" class="input" name="email" type="email" placeholder="your email" required>
+					<span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label heading" for="subject">Subject</label>
+				<div class="control is-expanded has-icons-left">
+					<div class="select is-fullwidth">
+						<select id="subject" name="subject">
+								<option value="general">general</option>
+								<option value="mentoring">request mentoring</option>
+								<option value="commissions">commission inquiry</option>
+								<option value="freelance">freelance project</option>
+							</select>
+					</div>
+					<span class="icon is-small is-left"><i class="fas fa-pen"></i></span>
+				</div>
+			</div>
+
+			<div class="field">
+				<label class="label heading" for="message">Message</label>
+				<div class="control">
+					<textarea id="message" class="textarea" name="message" required></textarea>
+				</div>
+			</div>
+
+			<div class="field">
+				<div class="control">
+					<button class="button is-primary" type="submit">submit</button>
+				</div>
+			</div>
+		</form>
 	</div>
 </template>
 

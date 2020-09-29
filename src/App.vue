@@ -66,6 +66,11 @@ export default {
 };
 </script>
 
+<style lang="sass">
+	@import "~bulma/bulma.sass"
+	@import "~bulma-extensions"
+</style>
+
 <style type="text/css">
 	/* Bulma Overwrites */
 
@@ -275,3 +280,4 @@ a:hover {
     margin-right: 10px;
 }
 </style>
+

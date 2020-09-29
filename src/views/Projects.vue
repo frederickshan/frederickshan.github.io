@@ -1,15 +1,5 @@
 <template>
-	<div class="about">
-		<div class="has-text-centered">
-			<figure class="image is-250x250 is-inline-block">
-				<img class="portrait is-rounded" src="../assets/images/self.jpg" alt="Self Portrait" />
-			</figure>
-		</div>
-
-		<div class="slide">
-			<h1 class="title">hello</h1>
-		</div>
-
+	<div class="projects">
 		<p>
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

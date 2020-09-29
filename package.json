@@ -9,7 +9,8 @@
     },
     "dependencies": {
         "bulma": "^0.9.1",
-        "bulma-extensions": "^6.2.7",
+        "bulma-divider": "^0.2.0",
+        "bulma-timeline": "^3.0.4",
         "core-js": "^3.6.5",
         "nvm": "0.0.4",
         "sass": "^1.26.11",

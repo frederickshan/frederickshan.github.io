@@ -204,6 +204,6 @@
 
 <script>
 export default {
-	name: 'Art'
+	name: 'About'
 };
 </script>

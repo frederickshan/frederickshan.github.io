@@ -73,7 +73,8 @@ export default {
 
 <style lang="sass">
 	@import "~bulma/bulma.sass"
-	@import "~bulma-extensions"
+	@import "~bulma-timeline"
+	@import "~bulma-divider"
 </style>
 
 <style type="text/css">

@@ -5,7 +5,7 @@
 			<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
 				<div class="navbar-brand">
 					<router-link to="/" class="navbar-item">
-						<img src=".\assets\images\initials.png" alt="Shannon Frederick initials" />
+						<img :src="imgPathInitials" alt="Shannon Frederick initials" />
 					</router-link>
 
 					<a role="button" class="navbar-burger burger"
@@ -63,6 +63,11 @@ export default {
 			showNav: false,
 		};
 	},
+	computed: {
+		imgPathInitials () {
+			return '@/assets/images/initials.png';
+		}
+	}
 };
 </script>
 

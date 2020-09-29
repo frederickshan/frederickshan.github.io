@@ -20,7 +20,7 @@
 </template>
 
 <script>
-export default {
-	name: 'Designs'
-};
+	export default {
+		name: 'Designs'
+	};
 </script>

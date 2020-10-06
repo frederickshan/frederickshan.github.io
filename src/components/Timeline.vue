@@ -92,6 +92,6 @@
 
 <script>
 export default {
-  name: 'Timeline'
+  name: 'timeline'
 }
 </script>

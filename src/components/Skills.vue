@@ -38,6 +38,6 @@
 
 <script>
 export default {
-  name: 'Skills'
+  name: 'skills'
 }
 </script>

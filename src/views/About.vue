@@ -14,7 +14,7 @@
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 			veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-			commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+			commodo consequat. Duis aute irure dolor in repre  henderit in voluptate
 			velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
 			cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
 			est laborum.
@@ -29,9 +29,9 @@
 </template>
 
 <script>
-import Skills from '@/components/Skills.vue';
-import Technologies from '@/components/Technologies.vue';
-import Timeline from '@/components/Timeline.vue';
+import Skills from '@/components/skills.vue';
+import Technologies from '@/components/technologies.vue';
+import Timeline from '@/components/timeline.vue';
 
 export default {
 	name: 'About',

@@ -56,6 +56,6 @@
 
 <script>
 export default {
-  name: 'Technologies'
+  name: 'technologies'
 }
 </script>

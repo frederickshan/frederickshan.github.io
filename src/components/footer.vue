@@ -1,9 +1,7 @@
 <template>
 	<footer class="footer">
 		<div class="content has-text-centered">
-			<p>
-				&copy; 2020 Shannon Frederick
-			</p>
+			<p>&copy; 2020 Shannon Frederick</p>
 		</div>
 	</footer>
 </template>
@@ -14,9 +12,9 @@ export default {
 }
 </script>
 
-<style scoped type="text/css">
+<style lang="scss" scoped>
 	.footer {
-		padding: 1rem 1.5rem 3rem;
+		padding: 16px 24px 48px;
 		background-color: transparent;
 	}
 </style>

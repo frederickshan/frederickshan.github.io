@@ -59,7 +59,7 @@ export default {
 
 <style lang="scss" scoped>
 	.navbar-item img {
-		max-height: 5rem;
+		max-height: 90px;
 	}
 
 	a.navbar-item,
@@ -68,7 +68,7 @@ export default {
 		color: #3f3f57;
 		font-family: 'Poppins', sans-serif;
 		font-weight: 600;
-		font-size: 1rem;
+		font-size: 18px;
 		letter-spacing: 1.5px;
 
 		&:hover,

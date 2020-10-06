@@ -11,8 +11,7 @@
 					<a role="button" class="navbar-burger burger"
 						aria-label="menu" aria-expanded="false"
 						data-target="navbarMenu" :class="{ 'is-active': showNav }"
-						@click="showNav = !showNav"
-					>
+						@click="showNav = !showNav">
 
 						<span aria-hidden="true"></span>
 						<span aria-hidden="true"></span>
@@ -43,6 +42,7 @@
 			</nav>
 		</header>
 
+		<!-- App -->
 		<main class="section">
 			<div class="container">
 				<div class="columns is-main-content">
@@ -260,7 +260,6 @@ a:hover {
     background-color: #ed825e;
 }
 
-.about,
 .skills,
 .technologies {
     border-bottom: 1px solid #dbdbdb;

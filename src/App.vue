@@ -43,27 +43,12 @@ export default {
     max-height: 5rem;
 }
 
-a.navbar-item,
-.navbar-link,
 .title {
     color: #3f3f57;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     font-size: 18px;
     letter-spacing: 1.5px;
-}
-
-.navbar-item:hover,
-.navbar-link:hover,
-.navbar.is-transparent .navbar-dropdown a.navbar-item:hover,
-.navbar-item:focus,
-.navbar-item:focus-within {
-    color: #0a0a0a;
-}
-
-.navbar-dropdown .navbar-item {
-    font-weight: 400;
-    font-size: 1rem;
 }
 
 .title {

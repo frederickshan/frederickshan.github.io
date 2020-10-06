@@ -1,14 +1,18 @@
 <template>
 	<header class="header">
-		<nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+		<nav class="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
 			<div class="navbar-brand">
-				<router-link to="/" class="navbar-item">
-					<img src="../assets/images/initials.png" alt="Shannon Frederick initials" />
+				<router-link to="/" class="navbar-item" aria-hidden="true">
+					<img src="../assets/images/initials.png" alt="Logo of Shannon Frederick Initials" />
 				</router-link>
 
-				<a role="button" class="navbar-burger burger"
-					aria-label="menu" aria-expanded="false"
-					data-target="navbarMenu" :class="{ 'is-active': showNav }"
+				<!-- Burger for Mobile Navigation -->
+				<a  class="navbar-burger burger"
+					role="button"
+					aria-label="menu"
+					aria-expanded="false"
+					data-target="navbarMenu"
+					:class="{ 'is-active': showNav }"
 					@click="showNav = !showNav">
 
 					<span aria-hidden="true"></span>
@@ -22,6 +26,7 @@
 				<div class="navbar-start">
 					<router-link to="/" class="navbar-item">about me</router-link>
 
+					<!-- Dropdown Menu for Projects -->
 					<div class="navbar-item has-dropdown is-hoverable">
 						<router-link to="/projects" class="navbar-link is-arrowless">projects</router-link>
 
@@ -51,3 +56,25 @@ export default {
 	}
 }
 </script>
+
+<style lang="scss" scoped>
+	.navbar-item img {
+		max-height: 5rem;
+	}
+
+	a.navbar-item,
+	.navbar-link,
+	.navbar-dropdown .navbar-item {
+		color: #3f3f57;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+		font-size: 1rem;
+		letter-spacing: 1.5px;
+
+		&:hover,
+		&:focus,
+		&:focus-within {
+			color: #0a0a0a;
+		}
+	}
+</style>

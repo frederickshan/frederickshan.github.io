@@ -1,5 +1,5 @@
 <template>
-	<div class="technologies">
+	<section class="technologies">
 		<p class="has-text-weight-semibold mt-6">technologies i love</p>
 		<p class="measurement has-text-weight-normal mb-4"><small>(level of confidence)</small></p>
 
@@ -51,7 +51,7 @@
 				<progress class="progress" value="60" max="100">60%</progress>
 			</div>
 		</div>
-	</div>
+	</section>
 </template>
 
 <script>

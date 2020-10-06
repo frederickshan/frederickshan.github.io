@@ -1,5 +1,5 @@
 <template>
-	<div class="skills">
+	<section class="skills">
 		<p class="has-text-weight-semibold mt-6">i do all kinds of neat stuff</p>
 
 		<div class="columns has-text-centered mt-4">
@@ -33,7 +33,7 @@
 				<p><a class="button is-primary mt-4 mb-6" href="#contact">contact me</a></p>
 			</div>
 		</div>
-	</div>
+	</section>
 </template>
 
 <script>

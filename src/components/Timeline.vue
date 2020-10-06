@@ -1,5 +1,5 @@
 <template>
-	<div class="timeline is-centered">
+	<section class="timeline is-centered">
 		<p class="has-text-weight-semibold mt-6 mb-6">how i got here</p>
 
 		<header class="timeline-header">
@@ -87,7 +87,7 @@
 		</header>
 
 		<p class="has-text-centered mt-6 mb-6">Want to see more? <a href="assets/files/Shannon-Frederick-Professional-Resume.pdf">View my resume</a> or <a href="https://www.linkedin.com/in/shannonefrederick/">connect on LinkedIn</a>.</p>
-	</div>
+	</section>
 </template>
 
 <script>

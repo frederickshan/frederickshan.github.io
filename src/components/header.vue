@@ -1,6 +1,6 @@
 <template>
 	<header class="header">
-		<nav class="navbar is-transparent is-spaced" role="navigation" aria-label="main navigation">
+		<nav class="navbar is-transparent is-spaced is-fixed-top" role="navigation" aria-label="main navigation">
 			<div class="navbar-brand">
 				<router-link to="/" class="navbar-item" aria-hidden="true">
 					<img src="../assets/images/initials.png" alt="Logo of Shannon Frederick Initials" />
@@ -15,7 +15,6 @@
 					:class="{ 'is-active': showNav }"
 					@click="showNav = !showNav">
 
-					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
@@ -58,6 +57,12 @@
 </script>
 
 <style lang="scss" scoped>
+	.navbar {
+		background-color: rgba(255, 255, 255, .7);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+	}
+
 	.navbar-item img {
 		max-height: 90px;
 	}
@@ -73,6 +78,21 @@
 		&:focus,
 		&:focus-within {
 			color: $steel-gray;
+		}
+	}
+
+	.navbar-burger {
+		height: unset;
+		width: 100px;
+		color: $primary;
+
+		span {
+			width: 24px;
+		}
+
+		&:hover {
+			background-color: transparent;
+			color: $primary-light;
 		}
 	}
 </style>

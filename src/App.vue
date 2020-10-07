@@ -1,5 +1,5 @@
 <template>
-	<div id="app">
+	<div id="app" class="has-navbar-fixed-top">
 		<Header />
 
 		<!-- App -->
@@ -40,6 +40,14 @@
 	body {
 		background: linear-gradient( $blurple, $coral, $golden-rod);
 		min-height: 100vh;
+	}
+
+	.has-navbar-fixed-top {
+		padding-top: 100px;
+
+		@include from($desktop) {
+			padding-top: 150px;
+		}
 	}
 
 	.is-main-content {

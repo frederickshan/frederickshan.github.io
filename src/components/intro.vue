@@ -23,7 +23,30 @@
 </template>
 
 <script>
-export default {
-  name: 'intro'
-}
+	export default {
+		name: 'intro'
+	}
 </script>
+
+<style lang="scss" scoped>
+	.slide {
+		position: relative;
+		left: -1000px;
+		-webkit-animation: slide .5s forwards;
+		-webkit-animation-delay: .8s;
+		animation: slide .5s forwards;
+		animation-delay: .8s;
+	}
+
+	@-webkit-keyframes slide {
+		100% {
+			left: 0;
+		}
+	}
+
+	@keyframes slide {
+		100% {
+			left: 0;
+		}
+	}
+</style>

@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import ContactLinkedin from '@/components/contact-linkedin.vue';
-import ContactForm from '@/components/contact-form.vue';
+	import ContactLinkedin from '@/components/contact-linkedin.vue';
+	import ContactForm from '@/components/contact-form.vue';
 
 	export default {
 		name: 'Contact',

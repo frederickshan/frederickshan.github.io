@@ -37,7 +37,7 @@
 </template>
 
 <script>
-export default {
-  name: 'skills'
-}
+	export default {
+		name: 'skills'
+	}
 </script>

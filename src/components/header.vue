@@ -47,14 +47,14 @@
 </template>
 
 <script>
-export default {
-	name: 'header',
-	data() {
-		return {
-			showNav: false
-		};
+	export default {
+		name: 'header',
+		data() {
+			return {
+				showNav: false
+			};
+		}
 	}
-}
 </script>
 
 <style lang="scss" scoped>
@@ -65,10 +65,8 @@ export default {
 	a.navbar-item,
 	.navbar-link,
 	.navbar-dropdown .navbar-item {
-		color: $gun-powder;
-		font-family: 'Poppins', sans-serif;
 		font-weight: 600;
-		font-size: 18px;
+		font-size: 16px;
 		letter-spacing: 1.5px;
 
 		&:hover,

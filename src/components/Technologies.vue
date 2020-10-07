@@ -55,7 +55,22 @@
 </template>
 
 <script>
-export default {
-  name: 'technologies'
-}
+	export default {
+		name: 'technologies'
+	}
 </script>
+
+<style lang="scss" scoped>
+	// Why does this not nest?!
+	.progress::-webkit-progress-value {
+		background-color: $coral;
+	}
+
+	.progress::-moz-progress-bar {
+		background-color: $coral;
+	}
+
+	.progress::-ms-fill {
+		background-color: $coral;
+	}
+</style>

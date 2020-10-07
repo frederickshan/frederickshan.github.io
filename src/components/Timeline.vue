@@ -91,7 +91,24 @@
 </template>
 
 <script>
-export default {
-  name: 'timeline'
-}
+	export default {
+		name: 'timeline'
+	}
 </script>
+
+<style lang="scss" scoped>
+	.timeline .timeline-item .timeline-marker {
+		background: $coral;
+		border-color: $coral;
+	}
+
+	.timeline .timeline-item .timeline-marker.is-icon {
+		color: $golden-rod;
+		background: transparent;
+		border: none;
+
+		.svg-inline--fa {
+			font-size: 24px !important; // fontawesome did me dirty
+		}
+	}
+</style>

@@ -15,7 +15,14 @@
 </template>
 
 <script>
-export default {
-	name: 'contact-linkedin'
-}
+	export default {
+		name: 'contact-linkedin'
+	}
 </script>
+
+<style lang="scss" scoped>
+	.linkedin-icon {
+		padding: 3px;
+		margin-right: 10px;
+	}
+</style>

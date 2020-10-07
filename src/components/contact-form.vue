@@ -47,7 +47,14 @@
 </template>
 
 <script>
-export default {
-	name: 'contact-form'
-}
+	export default {
+		name: 'contact-form'
+	}
 </script>
+
+<style lang="scss" scoped>
+	.control.has-icons-left .input:focus~.icon,
+	.control.has-icons-left .select:focus~.icon {
+		color: $gun-powder;
+	}
+</style>

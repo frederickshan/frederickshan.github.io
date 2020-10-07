@@ -22,7 +22,7 @@
 				</a>
 			</div>
 
-			<div id="navbarMenu" class="navbar-menu">
+			<div id="navbarMenu" class="navbar-menu" :class="{ 'is-active': showNav }">
 				<div class="navbar-start">
 					<router-link to="/" class="navbar-item">about me</router-link>
 

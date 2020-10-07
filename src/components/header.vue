@@ -58,9 +58,9 @@
 
 <style lang="scss" scoped>
 	.navbar {
-		background-color: rgba(255, 255, 255, .5);
-		backdrop-filter: blur(10px);
-		-webkit-backdrop-filter: blur(10px);
+		background-color: rgba(255, 255, 255, .8);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
 	}
 
 	.navbar-item img {
@@ -84,7 +84,6 @@
 	.navbar-burger {
 		height: unset;
 		width: 100px;
-		color: $primary;
 
 		span {
 			width: 24px;
@@ -92,7 +91,7 @@
 
 		&:hover {
 			background-color: transparent;
-			color: $primary-light;
+			color: $text-strong;
 		}
 	}
 </style>

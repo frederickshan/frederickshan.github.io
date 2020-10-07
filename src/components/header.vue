@@ -58,9 +58,9 @@
 
 <style lang="scss" scoped>
 	.navbar {
-		background-color: rgba(255, 255, 255, .7);
-		backdrop-filter: blur(5px);
-		-webkit-backdrop-filter: blur(5px);
+		background-color: rgba(255, 255, 255, .5);
+		backdrop-filter: blur(10px);
+		-webkit-backdrop-filter: blur(10px);
 	}
 
 	.navbar-item img {

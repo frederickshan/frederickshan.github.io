@@ -56,11 +56,11 @@
 	.button.is-primary:hover,
 	.button.is-primary:active,
 	.button.is-primary:focus {
-		background-color: $periwinkle;
+		background-color: $primary-light;
 	}
 
 	.title {
-		color: $gun-powder;
+		color: $text;
 		font-weight: 600;
 		font-size: 48px;
 		letter-spacing: 1.5px;

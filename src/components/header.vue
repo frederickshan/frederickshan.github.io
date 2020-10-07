@@ -65,7 +65,7 @@ export default {
 	a.navbar-item,
 	.navbar-link,
 	.navbar-dropdown .navbar-item {
-		color: #3f3f57;
+		color: $gun-powder;
 		font-family: 'Poppins', sans-serif;
 		font-weight: 600;
 		font-size: 18px;
@@ -74,7 +74,7 @@ export default {
 		&:hover,
 		&:focus,
 		&:focus-within {
-			color: #0a0a0a;
+			color: $steel-gray;
 		}
 	}
 </style>

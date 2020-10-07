@@ -30,203 +30,130 @@ export default {
 };
 </script>
 
-<style lang="sass">
-	@import "~bulma/bulma.sass"
-	@import "~bulma-timeline"
-	@import "~bulma-divider"
-</style>
+<style lang="scss">
+@import 'bulma/bulma.sass';
+@import '~bulma-timeline';
+@import '~bulma-divider';
 
-<style type="text/css">
-	/* Bulma Overwrites */
+	.title {
+		color: $gun-powder;
+		font-weight: 600;
+		font-size: 48px;
+		letter-spacing: 1.5px;
+	}
 
-.navbar-item img {
-    max-height: 5rem;
-}
+	.is-primary,
+	.tag:not(body).is-primary,
+	.button.is-primary {
+		letter-spacing: 1.5px;
+	}
 
-.title {
-    color: #3f3f57;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 18px;
-    letter-spacing: 1.5px;
-}
+	.button.is-primary:hover,
+	.button.is-primary:active,
+	.button.is-primary:focus {
+		background-color: $periwinkle;
+	}
 
-.title {
-    font-size: 3rem;
-}
+	.has-text-weight-semibold {
+		letter-spacing: 1.5px;
+	}
 
-.is-primary,
-.tag:not(body).is-primary,
-.button.is-primary {
-    background-color: #5E61ED;
-    letter-spacing: 1.5px;
-}
+	.timeline .timeline-item .timeline-marker {
+		background: $coral;
+		border-color: $coral;
+	}
 
-.button.is-primary:hover,
-.button.is-primary:active,
-.button.is-primary:focus {
-    background-color: #afb8ec;
-}
+	.timeline .timeline-item .timeline-marker.is-icon {
+		color: $golden-rod;
+		background: transparent;
+		border: none;
 
-.has-text-weight-semibold {
-    letter-spacing: 1.5px;
-}
+		.svg-inline--fa {
+			font-size: 24px !important; // fontawesome did me dirty
+		}
+	}
 
-.timeline .timeline-item .timeline-marker {
-    background: #ed825e;
-    border-color: #ed825e;
-}
+	.heading {
+		font-weight: 600;
+		font-size: 12px;
+	}
 
-.timeline .timeline-item .timeline-marker.is-icon {
-    color: #edc95e;
-    font-size: 20px;
-    background: transparent;
-    border: none;
-}
+	.control.has-icons-left .input:focus~.icon,
+	.control.has-icons-left .select:focus~.icon {
+		color: $gun-powder;
+	}
 
-.heading {
-    font-weight: 600;
-    font-size: 12px;
-}
+	.select:not(.is-multiple):not(.is-loading)::after {
+		border-color: $blurple;
+	}
 
-.input:active,
-.input:focus,
-.is-active.input,
-.is-active.textarea,
-.is-focused.input,
-.is-focused.textarea,
-.select select.is-active,
-.select select.is-focused,
-.select select:active,
-.select select:focus,
-.textarea:active,
-.textarea:focus,
-.button.is-primary:focus:not(:active) {
-    border-color: #5E61ED;
-    box-shadow: 0 0 0 .125em rgba(94, 97, 237, .25)
-}
-
-.control.has-icons-left .input:focus~.icon,
-.control.has-icons-left .select:focus~.icon {
-    color: #3f3f57;
-}
-
-.select:not(.is-multiple):not(.is-loading)::after {
-    border-color: #5E61ED;
-}
-
-.select:not(.is-multiple):not(.is-loading):hover::after {
-    border-color: #afb8ec;
-}
+	.select:not(.is-multiple):not(.is-loading):hover::after {
+		border-color: $periwinkle;
+	}
 
 
-/* End Bulma Overwrites  */
+	body {
+		background: linear-gradient( $blurple, $coral, $golden-rod);
+		min-height: 100vh;
+	}
 
-body {
-    background: linear-gradient( #5E61ED, #ed825e, #edc95e);
-    min-height: 100vh;
-}
+	.is-main-content {
+		padding: 32px;
+		background-color: $white;
+		border-radius: 30px;
+	}
 
-body,
-button,
-input,
-select,
-textarea {
-    color: #3f3f57;
-    font-family: 'Poppins', sans-serif;
-}
+	.slide {
+		position: relative;
+		left: -1000px;
+		-webkit-animation: slide .5s forwards;
+		-webkit-animation-delay: .8s;
+		animation: slide .5s forwards;
+		animation-delay: .8s;
+	}
 
-a {
-    color: #5E61ED;
-}
+	@-webkit-keyframes slide {
+		100% {
+			left: 0;
+		}
+	}
 
-a:hover {
-    color: #afb8ec;
-}
+	@keyframes slide {
+		100% {
+			left: 0;
+		}
+	}
 
-#goToTop {
-    display: none;
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    z-index: 99;
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-}
+	.progress::-webkit-progress-value {
+		background-color: $coral;
+	}
 
-#goToTop:hover {
-    color: #0a0a0a;
-}
+	.progress::-moz-progress-bar {
+		background-color: $coral;
+	}
 
-.page,
-:target~.default {
-    display: none;
-}
+	.progress::-ms-fill {
+		background-color: $coral;
+	}
 
-.default,
-:target {
-    display: block;
-    scroll-margin-top: 100px;
-}
+	.skills,
+	.technologies {
+		border-bottom: 1px solid $mercury;
+	}
 
-.is-main-content {
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 30px;
-}
+	.about,
+	.technologies {
+		padding-bottom: 48px;
+	}
 
-.slide {
-    position: relative;
-    left: -1000px;
-    -webkit-animation: slide .5s forwards;
-    -webkit-animation-delay: .5s;
-    animation: slide .5s forwards;
-    animation-delay: .5s;
-}
+	.is-250x250 {
+		height: 250px;
+		width: 250px;
+	}
 
-@-webkit-keyframes slide {
-    100% {
-        left: 0;
-    }
-}
-
-@keyframes slide {
-    100% {
-        left: 0;
-    }
-}
-
-.progress::-webkit-progress-value {
-    background-color: #ed825e;
-}
-
-.progress::-moz-progress-bar {
-    background-color: #ed825e;
-}
-
-.progress::-ms-fill {
-    background-color: #ed825e;
-}
-
-.skills,
-.technologies {
-    border-bottom: 1px solid #dbdbdb;
-}
-
-.about,
-.technologies {
-    padding-bottom: 3rem;
-}
-
-.is-250x250 {
-    height: 250px;
-    width: 250px;
-}
-
-.linkedin-icon {
-    padding: 3px;
-    margin-right: 10px;
-}
+	.linkedin-icon {
+		padding: 3px;
+		margin-right: 10px;
+	}
 </style>
 

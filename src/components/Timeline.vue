@@ -3,7 +3,7 @@
 		<p class="has-text-weight-semibold mt-6 mb-6">how i got here</p>
 
 		<header class="timeline-header">
-			<span class="tag is-medium is-primary">present</span>
+			<span class="tag is-medium">present</span>
 		</header>
 		<div class="timeline-item">
 			<div class="timeline-marker"></div>
@@ -14,7 +14,7 @@
 			</div>
 		</div>
 		<header class="timeline-header">
-			<span class="tag is-primary">2019</span>
+			<span class="tag">2019</span>
 		</header>
 		<div class="timeline-item">
 			<div class="timeline-marker is-icon">
@@ -35,7 +35,7 @@
 			</div>
 		</div>
 		<header class="timeline-header">
-			<span class="tag is-primary">2018</span>
+			<span class="tag">2018</span>
 		</header>
 		<div class="timeline-item">
 			<div class="timeline-marker"></div>
@@ -46,7 +46,7 @@
 			</div>
 		</div>
 		<header class="timeline-header">
-			<span class="tag is-primary">2017</span>
+			<span class="tag">2017</span>
 		</header>
 		<div class="timeline-item">
 			<div class="timeline-marker"></div>
@@ -83,7 +83,7 @@
 			</div>
 		</div>
 		<header class="timeline-header">
-			<span class="tag is-medium is-primary">start</span>
+			<span class="tag is-medium">start</span>
 		</header>
 
 		<p class="has-text-centered mt-6 mb-6">Want to see more? <a href="assets/files/Shannon-Frederick-Professional-Resume.pdf">View my resume</a> or <a href="https://www.linkedin.com/in/shannonefrederick/">connect on LinkedIn</a>.</p>
@@ -110,5 +110,12 @@
 		.svg-inline--fa {
 			font-size: 24px !important; // fontawesome did me dirty
 		}
+	}
+
+	.tag {
+		background-color: $white;
+		border: 2px solid $primary;
+		color: $primary;
+		letter-spacing: 1.5px;
 	}
 </style>

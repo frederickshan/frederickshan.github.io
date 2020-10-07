@@ -91,6 +91,10 @@
 		padding-bottom: 48px;
 	}
 
+	.has-padding-top {
+		padding-top: 48px;
+	}
+
 	.is-250x250 {
 		height: 250px;
 		width: 250px;

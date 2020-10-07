@@ -85,13 +85,13 @@
 		height: unset;
 		width: 100px;
 
-		span {
-			width: 24px;
-		}
-
 		&:hover {
 			background-color: transparent;
 			color: $text-strong;
+		}
+
+		span {
+			width: 24px;
 		}
 	}
 </style>

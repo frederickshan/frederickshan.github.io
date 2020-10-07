@@ -1,5 +1,5 @@
 <template>
-	<div class="has-padding-bottom">
+	<div class="mb-6">
 		<p class="has-text-weight-semibold">interested in learning more?</p>
 		<p>
 			Connect with me on LinkedIn to view the most up-to-date information regarding my career, education, skills, and more.

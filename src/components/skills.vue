@@ -1,5 +1,5 @@
 <template>
-	<section class="skills">
+	<section class="skills has-divider">
 		<p class="has-text-weight-semibold mt-6">i do all kinds of neat stuff</p>
 
 		<div class="columns has-text-centered mt-4">

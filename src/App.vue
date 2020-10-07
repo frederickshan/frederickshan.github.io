@@ -75,6 +75,14 @@
 		letter-spacing: 1.5px;
 	}
 
+	.has-divider {
+		border-bottom: 1px solid $border;
+	}
+
+	.has-padding-bottom {
+		padding-bottom: 48px;
+	}
+
 	.is-250x250 {
 		height: 250px;
 		width: 250px;

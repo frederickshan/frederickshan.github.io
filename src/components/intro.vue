@@ -1,5 +1,5 @@
 <template>
-	<section class="intro">
+	<section class="intro has-divider has-padding-bottom">
 		<div class="has-text-centered">
 			<figure class="image is-250x250 is-inline-block">
 				<img class="portrait is-rounded" src="../assets/images/self.jpg" alt="Self Portrait" />

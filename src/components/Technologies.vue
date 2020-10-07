@@ -1,5 +1,5 @@
 <template>
-	<section class="technologies">
+	<section class="technologies has-divider has-padding-bottom">
 		<p class="has-text-weight-semibold mt-6">technologies i love</p>
 		<p class="measurement has-text-weight-normal mb-4"><small>(level of confidence)</small></p>
 

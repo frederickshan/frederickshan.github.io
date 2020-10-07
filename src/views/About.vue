@@ -26,14 +26,3 @@
 		}
 	};
 </script>
-
-<style lang="scss" scoped>
-	.skills,
-	.technologies {
-		border-bottom: 1px solid $mercury;
-	}
-
-	.technologies {
-		padding-bottom: 48px;
-	}
-</style>

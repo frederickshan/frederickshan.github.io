@@ -1,6 +1,6 @@
 <template>
 	<div class="designs">
-		<h3 class="title">graphic designs</h3>
+		<h1 class="title">graphic designs</h1>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 

@@ -1,6 +1,6 @@
 <template>
 	<div class="code">
-		<h4 class="title">digital art</h4>
+		<h1 class="title">digital art</h1>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 

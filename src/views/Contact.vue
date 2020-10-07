@@ -1,6 +1,6 @@
 <template>
 	<div class="contact">
-		<h5 class="title">drop a line</h5>
+		<h1 class="title">drop a line</h1>
 
 		<ContactLinkedin />
 

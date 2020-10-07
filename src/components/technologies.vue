@@ -17,19 +17,19 @@
 
 		<div class="columns">
 			<div class="column is-half">
-				<p class="heading">Javascript</p>
-				<progress class="progress" value="90" max="100">80%</progress>
+				<p class="heading">Git</p>
+				<progress class="progress" value="90" max="100">90%</progress>
 			</div>
 
-			<div class="column">
-				<p class="heading">Vue</p>
+			<div class="column is-half">
+				<p class="heading">Javascript</p>
 				<progress class="progress" value="80" max="100">80%</progress>
 			</div>
 		</div>
 
 		<div class="columns">
-			<div class="column is-half">
-				<p class="heading">Bash</p>
+			<div class="column">
+				<p class="heading">Vue</p>
 				<progress class="progress" value="80" max="100">80%</progress>
 			</div>
 

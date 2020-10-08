@@ -6,7 +6,7 @@
 		<main class="section">
 			<div class="container">
 				<div class="columns is-main-content">
-					<div class="column is-three-fifths is-offset-one-fifth">
+					<div class="column is-10 is-offset-1">
 						<router-view />
 					</div>
 				</div>

@@ -36,12 +36,8 @@
 	@import '~bulma-divider';
 
 	// Global
-
-	html {
-		background: linear-gradient( $blue-chill, $rose-bud-cherry, $buttered-rum);
-	}
-
 	body {
+		background: linear-gradient( $blue-chill, $rose-bud-cherry, $buttered-rum);
 		min-height: 100vh;
 	}
 

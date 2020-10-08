@@ -37,8 +37,11 @@
 
 	// Global
 
-	body {
+	html {
 		background: linear-gradient( $blue-chill, $rose-bud-cherry, $buttered-rum);
+	}
+
+	body {
 		min-height: 100vh;
 	}
 

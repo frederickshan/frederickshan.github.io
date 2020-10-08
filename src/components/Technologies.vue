@@ -63,14 +63,14 @@
 <style lang="scss" scoped>
 	// Why does this not nest?!
 	.progress::-webkit-progress-value {
-		background-color: $coral;
+		background-color: $rose-bud-cherry;
 	}
 
 	.progress::-moz-progress-bar {
-		background-color: $coral;
+		background-color: $rose-bud-cherry;
 	}
 
 	.progress::-ms-fill {
-		background-color: $coral;
+		background-color: $rose-bud-cherry;
 	}
 </style>

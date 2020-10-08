@@ -98,12 +98,12 @@
 
 <style lang="scss" scoped>
 	.timeline .timeline-item .timeline-marker {
-		background: $coral;
-		border-color: $coral;
+		background: $rose-bud-cherry;
+		border-color: $rose-bud-cherry;
 	}
 
 	.timeline .timeline-item .timeline-marker.is-icon {
-		color: $golden-rod;
+		color: $buttered-rum;
 		background: transparent;
 		border: none;
 

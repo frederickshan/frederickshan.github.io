@@ -7,7 +7,7 @@
 				</router-link>
 
 				<!-- Burger for Mobile Navigation -->
-				<a  class="navbar-burger burger"
+				<a class="navbar-burger burger"
 					role="button"
 					aria-label="menu"
 					aria-expanded="false"
@@ -21,7 +21,11 @@
 				</a>
 			</div>
 
-			<div id="navbarMenu" class="navbar-menu" :class="{ 'is-active': showNav }">
+			<div id="navbarMenu"
+				class="navbar-menu"
+				:class="{ 'is-active': showNav }"
+				@click="showNav = !showNav">
+
 				<div class="navbar-start">
 					<router-link to="/" class="navbar-item">about me</router-link>
 
@@ -38,7 +42,7 @@
 				</div>
 
 				<div class="navbar-end">
-					<router-link to="/contact" class="navbar-item">contact</router-link>
+					<router-link to="/contact" class="navbar-item" @click="showNav = !showNav">contact</router-link>
 				</div>
 			</div>
 		</nav>
@@ -77,7 +81,7 @@
 		&:hover,
 		&:focus,
 		&:focus-within {
-			color: $waterloo;
+			color: $text-light;
 		}
 	}
 

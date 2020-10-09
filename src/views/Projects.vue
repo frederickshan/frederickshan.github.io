@@ -31,6 +31,10 @@
 			</div>
 		</div>
 
+		<router-link v-if="!showLinks" to="/projects">
+			<p class="has-text-right mb-2">&#8617; back to projects</p>
+		</router-link>
+
 		<router-view></router-view>
 	</div>
 </template>

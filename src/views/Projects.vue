@@ -8,24 +8,22 @@
 			commodo consequat.
 		</p>
 
-
-		<!-- TO DO: Hide this if viewing children -->
-		<div class="columns has-text-centered has-padding-top">
-			<div class="column is-one-third">
+		<div v-if="showLinks" class="columns has-text-centered has-padding-top is-desktop">
+			<div class="column is-one-third-desktop">
 				<i class="fas fa-laptop-code fa-5x"></i>
 				<p class="heading">Web Development</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				<router-link to="/projects/code" class="button is-primary mt-4 mb-6">view code</router-link>
 			</div>
 
-			<div class="column is-one-third">
+			<div class="column is-one-third-desktop">
 				<i class="fas fa-draw-polygon fa-5x"></i>
 				<p class="heading">Graphic Design</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				<router-link to="/projects/designs" class="button is-primary mt-4 mb-6">view designs</router-link>
 			</div>
 
-			<div class="column is-one-third">
+			<div class="column is-one-third-desktop">
 				<i class="fas fa-edit fa-5x"></i>
 				<p class="heading">Digital Art</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -39,6 +37,12 @@
 
 <script>
 	export default {
-		name: 'Projects'
+		name: 'Projects',
+		computed: {
+			showLinks() {
+				const projects = "projects";
+				return this.$route.path.endsWith(projects);
+			}
+		}
 	};
 </script>

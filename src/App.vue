@@ -71,6 +71,7 @@
 		font-weight: 600;
 		font-size: 48px;
 		letter-spacing: 1.5px;
+		text-transform: lowercase;
 	}
 
 	.heading {

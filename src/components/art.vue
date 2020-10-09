@@ -1,6 +1,6 @@
 <template>
-	<div class="designs">
-		<h1 class="title">graphic designs</h1>
+	<div class="art">
+		<h2 class="has-text-weight-semibold">digital art</h2>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
@@ -9,7 +9,7 @@
 				<article class="tile is-child">
 					<div class="has-text-centered">
 						<figure class="image is-inline-block">
-							<img src="assets/images/placeholder.svg" alt="placeholder image">
+							<img src="../assets/images/placeholder.svg" alt="placeholder image">
 						</figure>
 						<p class="heading">Coming Soon</p>
 					</div>
@@ -21,6 +21,6 @@
 
 <script>
 	export default {
-		name: 'Designs'
+		name: 'Art'
 	};
 </script>

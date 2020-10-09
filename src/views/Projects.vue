@@ -1,13 +1,15 @@
 <template>
 	<div class="projects">
-		<h1 class="title">Projects</h1>
-		<p class="has-divider has-padding-bottom">
+		<h1 class="title">projects</h1>
+		<p class="has-divider has-padding-bottom mb-6">
 			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
 			veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
 			commodo consequat.
 		</p>
 
+
+		<!-- TO DO: Hide this if viewing children -->
 		<div class="columns has-text-centered has-padding-top">
 			<div class="column is-one-third">
 				<i class="fas fa-laptop-code fa-5x"></i>
@@ -30,6 +32,8 @@
 				<router-link to="/projects/art" class="button is-primary mt-4">view art</router-link>
 			</div>
 		</div>
+
+		<router-view></router-view>
 	</div>
 </template>
 

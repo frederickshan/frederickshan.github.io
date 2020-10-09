@@ -4,9 +4,9 @@ import Router from 'vue-router';
 import About from './views/About.vue';
 import Contact from './views/Contact.vue';
 import Projects from './views/Projects.vue';
-import Code from './views/Code.vue';
-import Designs from './views/Designs.vue';
-import Art from './views/Art.vue';
+import code from './components/code.vue';
+import designs from './components/designs.vue';
+import art from './components/art.vue';
 
 Vue.use(Router);
 
@@ -24,17 +24,17 @@ export default new Router({
             children: [{
                     path: 'code',
                     name: 'code',
-                    component: Code
+                    component: code
                 },
                 {
                     path: 'designs',
                     name: 'designs',
-                    component: Designs
+                    component: designs
                 },
                 {
                     path: 'art',
                     name: 'art',
-                    component: Art
+                    component: art
                 }
             ]
         },

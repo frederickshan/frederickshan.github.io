@@ -97,18 +97,25 @@
 </script>
 
 <style lang="scss" scoped>
-	.timeline .timeline-item .timeline-marker {
-		background: $rose-bud-cherry;
-		border-color: $rose-bud-cherry;
-	}
+	.timeline .timeline-item  {
+		&::before,
+		&:nth-of-type(2n+1)::before {
+			background-color: $border;
+		}
 
-	.timeline .timeline-item .timeline-marker.is-icon {
-		color: $buttered-rum;
-		background: transparent;
-		border: none;
+		.timeline-marker {
+			background: $secondary;
+			border-color: $secondary;
 
-		.svg-inline--fa {
-			font-size: 24px !important; // fontawesome did me dirty
+			&.is-icon {
+				color: $accent;
+				background: transparent;
+				border: none;
+
+				.svg-inline--fa {
+					font-size: 24px !important; // fontawesome did me dirty
+				}
+			}
 		}
 	}
 

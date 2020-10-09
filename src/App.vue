@@ -37,7 +37,7 @@
 
 	// Global
 	body {
-		background: linear-gradient( $blue-chill, $rose-bud-cherry, $buttered-rum);
+		background: linear-gradient( $blue-chill, $secondary, $accent);
 		min-height: 100vh;
 	}
 
@@ -51,7 +51,7 @@
 
 	.is-main-content {
 		padding: 32px;
-		background-color: $white;
+		background-color: $whisper;
 		border-radius: 30px;
 	}
 

@@ -16,6 +16,6 @@
 	.footer {
 		padding: 16px 24px 48px;
 		background-color: transparent;
-		color: $mercury;
+		color: $whisper;
 	}
 </style>

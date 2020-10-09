@@ -61,6 +61,12 @@
 <style lang="scss" scoped>
 	.control.has-icons-left .input:focus~.icon,
 	.control.has-icons-left .select:focus~.icon {
-		color: $gun-powder;
+		color: $fiord;
+	}
+
+	.select select::placeholder,
+	.textarea::placeholder,
+	.input::placeholder {
+		color: $text-light;
 	}
 </style>

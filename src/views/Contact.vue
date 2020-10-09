@@ -22,3 +22,9 @@
 		}
 	};
 </script>
+
+<style lang="scss" scoped>
+	.is-divider[data-content]::after {
+		background: $white;
+	}
+</style>

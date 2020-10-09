@@ -69,7 +69,7 @@
 
 	a.navbar-item,
 	.navbar-link,
-	.navbar-dropdown .navbar-item {
+	.navbar.is-transparent .navbar-dropdown a.navbar-item {
 		font-weight: 600;
 		font-size: 16px;
 		letter-spacing: 1.5px;
@@ -77,7 +77,7 @@
 		&:hover,
 		&:focus,
 		&:focus-within {
-			color: $steel-gray;
+			color: $waterloo;
 		}
 	}
 
@@ -87,7 +87,7 @@
 
 		&:hover {
 			background-color: transparent;
-			color: $text-strong;
+			color: $text-light;
 		}
 
 		span {

@@ -61,16 +61,29 @@
 </script>
 
 <style lang="scss" scoped>
-	// Why does this not nest?!
-	.progress::-webkit-progress-value {
-		background-color: $rose-bud-cherry;
+	// Chromium
+	.progress {
+		&::-webkit-progress-bar {
+			background-color: $border;
+		}
+
+		&::-webkit-progress-value {
+			background-color: $secondary;
+		}
 	}
 
-	.progress::-moz-progress-bar {
-		background-color: $rose-bud-cherry;
+	// Gecko
+	.progress {
+		background-color: $border;
+
+		&::-moz-progress-bar {
+			background-color: $secondary;
+		}
 	}
 
-	.progress::-ms-fill {
-		background-color: $rose-bud-cherry;
+	// Trident
+	.progress {
+		background-color: $border;
+		color: $secondary;
 	}
 </style>

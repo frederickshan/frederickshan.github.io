@@ -71,7 +71,7 @@
 			<div class="timeline-content">
 				<p class="heading">July 2017</p>
 				<p class="has-text-weight-semibold">Cleveland GiveCamp</p>
-				<p>Volunteer</p>
+				<p>Volunteer Web Developer</p>
 			</div>
 		</div>
 		<div class="timeline-item">
@@ -86,7 +86,13 @@
 			<span class="tag is-medium">start</span>
 		</header>
 
-		<p class="has-text-centered mt-6 mb-6">Want to see more? <a href="assets/files/Shannon-Frederick-Professional-Resume.pdf">View my resume</a> or <a href="https://www.linkedin.com/in/shannonefrederick/">connect on LinkedIn</a>.</p>
+		<p class="has-text-centered mt-6 mb-6">
+			Want to see more?
+			<a href="https://drive.google.com/file/d/11ZXZbM6AOHQuShzKuI6JfW4zrxOOE4Tp/view?usp=sharing">View my resume</a> 
+			or
+			<a href="https://www.linkedin.com/in/shannonefrederick/">connect on LinkedIn</a>
+			.
+		</p>
 	</section>
 </template>
 

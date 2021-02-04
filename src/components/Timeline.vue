@@ -88,7 +88,7 @@
 
 		<p class="has-text-centered mt-6 mb-6">
 			Want to see more?
-			<a href="https://drive.google.com/file/d/11ZXZbM6AOHQuShzKuI6JfW4zrxOOE4Tp/view?usp=sharing" target="_blank">View my resume</a>
+			<a href="https://drive.google.com/file/d/1a1h3F_U1FH9MggKn5-Tjevm7iUTbJehd/view?usp=sharing" target="_blank">View my resume</a>
 			or
 			<a href="https://www.linkedin.com/in/shannonefrederick/" target="_blank">connect on LinkedIn</a>
 			.
